@@ -1,0 +1,18 @@
+ml_models: 
+ - SVM
+ - XGBoost
+ - LightGBM
+ - RandomForest
+ - ExtraTrees
+data_root: F:\DATA_primary
+survival_file: F:\20230915-BianYun\Survival.csv
+clinic_file: F:\20230915-BianYun\Clinical.csv
+label_file: group.csv
+subsets: [train, test]
+# label_file: ../data/group.csv
+event_col: OS
+duration_col: OSTime
+metric_spec: AUC
+metric_spec_ids: 
+metric_spec_agg: mean
+DISABLE_VIDEO: True
